@@ -6,7 +6,6 @@
 //
 //    They are in the following format:
 //    title (String): the name of the movie
-var title = "IMDB + Josh’s Top 8 Movies"
 //    iscore (Number): the IMDB score
 //    rating (String): the movie's MPAA rating
 //    released (Array): the release date. Note that the order of the array is:  YYYY, MM, DD
@@ -34,8 +33,10 @@ const vue_app = Vue.createApp({
         return {
             // This holds your movies.json data.
             movies: [],
-            /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-      }
+            title: "IMBD + Josh's Top 8 Movies",
+            owner: "Josh",
+            github: "https://github.com/122jcruz/CruzM-p3",
+                }
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
