@@ -49,20 +49,20 @@
 	            <div class="thumbnail" >
 
 						<img class="poster"  />
-						<div class="imageInfo">{{ movies[{{ index }} - {{ movies }}].posterIndex }}
+						<div class="imageInfo">{{ movies [index].posterIndex }}
 
 
 
 
-						<p class="title">{{ movies[{{ index }} - {{ movies }}].title }} ({{ movies[{{ index }} - {{ movies }}].country  }})</p>
-						<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{ movies[{{ index }} - {{ movies }}].iscore }} </p>
-						<p class="runtime">Runtime: {{movies[{{ index }} - {{ movies }}].runtime}}</p>
-						<p class="released">Released: {{movies[{{ index }} - {{ movies }}].released}} | Rated: {{movies[{{ index }} - {{ movies }}].rating}}</p>
+						<p class="title">{{ movies [index].title }} ({{ movies [index].country  }})</p>
+						<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{ movies [index].iscore }} </p>
+						<p class="runtime">Runtime: {{movies [index].runtime}}</p>
+						<p class="released">Released: {{movies [index].released}} | Rated: {{movies [index].rating}}</p>
 						<p class="websites" >Websites: <a v-bind:href="movies.imbd">IMBD</a> | <a v-bind:href="websites">Official</a></p>
 
 			            <div class="social">
-			              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies[{{ index }} - {{ movies }}].likes}}</p>
-			              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movies[{{ index }} - {{ movies }}].dislikes}}</p>
+			              <p class="likes"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movies [index].likes}}</p>
+			              <p class="dislikes"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{movies [index].dislikes}}</p>
 			            </div>
 	            </div>
 	        </div>
