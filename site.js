@@ -36,11 +36,17 @@ const vue_app = Vue.createApp({
             title: "IMBD + Josh's Top 8 Movies",
             owner: "Josh",
             github: "https://github.com/122jcruz/CruzM-p3",
+            months:["January"."February","March","April","May","June","July","August","September","October","September","December"]
                 }
     },
       methods: {
-        getMonthTest(dateArray){
-          switch (dateArray) {
+        getMonthText(dateArray){
+          switch (dateArray[1]) {
+            var releaseDate;
+            var month;
+            case 1:
+            month = months[0]
+            break
             case 0:
             month = "January"
             break;
@@ -73,10 +79,12 @@ const vue_app = Vue.createApp({
             month = "December"
 
   }
+  releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
 },
 posterClick(index){
-  return index.filter(index => index + 1 === 0)
+  movie.posters
 }
+//if(index >= movies[index.posters.length ]
 
       }
 })
