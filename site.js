@@ -47,36 +47,40 @@ const vue_app = Vue.createApp({
             case 1:
             month = months[0]
             break
-            case 0:
-            month = "January"
-            break;
-            case 1:
-            month = "February"
-            break;
             case 2:
-            month = "March"
+            month = months[1]
             break;
             case 3:
-            month = "April"
+            month = months[2]
             break;
             case 4:
-            month = "May"
+            month = months[3]
             break;
             case 5:
-            month = "June"
+            month = months[4]
             break;
             case 6:
-            month = "July"
+            month = months[5]
+            break;
             case 7:
-            month = "August"
+            month = months[6]
+            break;
             case 8:
-            month = "September"
+            month = months[7]
+            break;
             case 9:
-            month = "October"
+            month = months[8]
+            break;
             case 10:
-            month = "November"
+            month = months[9]
+            break;
             case 11:
-            month = "December"
+            month = months[10]
+            break;
+            case 12:
+            month = months[11]
+            break;
+
 
   }
   releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
