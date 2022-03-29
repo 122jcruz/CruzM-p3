@@ -42,27 +42,41 @@ const vue_app = Vue.createApp({
         getMonthTest(dateArray){
           switch (dateArray) {
             case 0:
-            day = "Sunday";
+            month = "January"
             break;
             case 1:
-            day = "Monday";
+            month = "February"
             break;
             case 2:
-            day = "Tuesday";
+            month = "March"
             break;
             case 3:
-            day = "Wednesday";
+            month = "April"
             break;
             case 4:
-            day = "Thursday";
+            month = "May"
             break;
             case 5:
-            day = "Friday";
+            month = "June"
             break;
             case 6:
-            day = "Saturday";
+            month = "July"
+            case 7:
+            month = "August"
+            case 8:
+            month = "September"
+            case 9:
+            month = "October"
+            case 10:
+            month = "November"
+            case 11:
+            month = "December"
+
   }
-        }
+},
+posterClick(index){
+  return index.filter(index => index + 1 === 0)
+}
 
       }
 })
