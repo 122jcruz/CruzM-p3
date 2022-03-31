@@ -36,7 +36,7 @@ const vue_app = Vue.createApp({
             title: "IMBD + Josh's Top 8 Movies",
             owner: "Josh",
             github: "https://github.com/122jcruz/CruzM-p3",
-            months:["January"."February","March","April","May","June","July","August","September","October","September","December"]
+            months:["January"."February","March","April","May","June","July","August","September","October","November","December"]
                 }
     },
       methods: {
@@ -81,9 +81,10 @@ const vue_app = Vue.createApp({
             month = months[11]
             break;
 
-
+}
   }
- releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
+  releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
+
 },
 posterClick(index){
   movie.posters
