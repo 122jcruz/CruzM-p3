@@ -81,9 +81,9 @@ const vue_app = Vue.createApp({
         month = months[11]
         break;
 }
-releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
 
 }
+releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
 
 }
 }
