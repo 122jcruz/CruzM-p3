@@ -22,76 +22,72 @@
 
 
 const vue_app = Vue.createApp({
-      // This automatically imports your movies.json file and puts it into
-      //   the variable: movies
-      created () {
-            fetch('movies.json').then(response => response.json()).then(json => {
-                  this.movies = json
-            })
-      },
-      data() {
-        return {
-            // This holds your movies.json data.
-            movies: [],
-            title: "IMBD + Josh's Top 8 Movies",
-            owner: "Josh",
-            github: "https://github.com/122jcruz/CruzM-p3",
-            months:["January"."February","March","April","May","June","July","August","September","October","November","December"]
-                }
-    },
-      methods: {
-        getMonthText(dateArray){
-          switch (dateArray[1]) {
-            var releaseDate;
-            var month;
-            case 1:
-            month = months[0]
-            break
-            case 2:
-            month = months[1]
-            break;
-            case 3:
-            month = months[2]
-            break;
-            case 4:
-            month = months[3]
-            break;
-            case 5:
-            month = months[4]
-            break;
-            case 6:
-            month = months[5]
-            break;
-            case 7:
-            month = months[6]
-            break;
-            case 8:
-            month = months[7]
-            break;
-            case 9:
-            month = months[8]
-            break;
-            case 10:
-            month = months[9]
-            break;
-            case 11:
-            month = months[10]
-            break;
-            case 12:
-            month = months[11]
-            break;
-
-}
-  }
-  releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
-
+  // This automatically imports your movies.json file and puts it into
+  //   the variable: movies
+  created () {
+        fetch('movies.json').then(response => response.json()).then(json => {
+              this.movies = json
+        })
+  },
+  data() {
+    return {
+        // This holds your movies.json data.
+        movies: [],
+        title: "IMBD + Josh's Top 8 Movies",
+        owner: "Josh",
+        github: "https://github.com/122jcruz/CruzM-p3",
+        months:["January"."February","March","April","May","June","July","August","September","October","November","December"]
+            }
 },
-posterClick(index){
-  movie.posters
+  methods: {
+    getMonthText(dateArray){
+      switch (dateArray[1]) {
+        var releaseDate;
+        var month;
+        case 1:
+        month = months[0]
+        break
+        case 2:
+        month = months[1]
+        break;
+        case 3:
+        month = months[2]
+        break;
+        case 4:
+        month = months[3]
+        break;
+        case 5:
+        month = months[4]
+        break;
+        case 6:
+        month = months[5]
+        break;
+        case 7:
+        month = months[6]
+        break;
+        case 8:
+        month = months[7]
+        break;
+        case 9:
+        month = months[8]
+        break;
+        case 10:
+        month = months[9]
+        break;
+        case 11:
+        month = months[10]
+        break;
+        case 12:
+        month = months[11]
+        break;
 }
-//if(index >= movies[index.posters.length ]
+releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
 
-      }
-})
+}
+
+}
+}
+
+
 
 vue_app.mount("#vue_app")
