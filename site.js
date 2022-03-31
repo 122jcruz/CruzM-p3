@@ -36,58 +36,60 @@ const vue_app = Vue.createApp({
         title: "IMBD + Josh's Top 8 Movies",
         owner: "Josh",
         github: "https://github.com/122jcruz/CruzM-p3",
-        months:["January"."February","March","April","May","June","July","August","September","October","November","December"]
             }
 },
   methods: {
     getMonthText(dateArray){
+      var releaseDate;
+      var month;
       switch (dateArray[1]) {
-        var releaseDate;
-        var month;
+
         case 1:
-        month = months[0]
-        break
+        month = "January";
+        break;
         case 2:
-        month = months[1]
+        month = "February";
         break;
         case 3:
-        month = months[2]
+        month = "March";
         break;
         case 4:
-        month = months[3]
+        month = "April";
         break;
         case 5:
-        month = months[4]
+        month = "May";
         break;
         case 6:
-        month = months[5]
+        month = "June";
         break;
         case 7:
-        month = months[6]
+        month = "July";
         break;
         case 8:
-        month = months[7]
+        month = "August";
         break;
         case 9:
-        month = months[8]
+        month = "September";
         break;
         case 10:
-        month = months[9]
+        month = "October";
         break;
         case 11:
-        month = months[10]
+        month = "November";
         break;
         case 12:
-        month = months[11]
+        month = "December";
         break;
 }
+return month + " " + dateArray[2] + " " + dateArray[0];
+
+},
+posterClick(index){
+  
+}
 
 }
-releaseDate = month + " " + movie.released[2] + " " + movie.released[0]
-
-}
-
-
+})
 
 
 vue_app.mount("#vue_app")
