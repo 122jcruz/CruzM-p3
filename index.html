@@ -50,8 +50,8 @@
 <p class="websites">Websites: <a v-bind:href="movies[index].imdb">IMDB</a> | <a v-bind:href="movies[index].website">Official</a></p>
 
            <div class="social">
-             <p class="likes" v-on:click"movies[index].likes++"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movies[index].likes }}</p>
-             <p class="dislikes" v-on:click"movies[index].dislikes++"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movies[index].dislikes }}</p>
+             <p class="likes" v-on:click="movies[index].likes++"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{ movies[index].likes }}</p>
+             <p class="dislikes" v-on:click="movies[index].dislikes++"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movies[index].dislikes }}</p>
            </div>
            </div>
        </div>
