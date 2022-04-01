@@ -85,7 +85,10 @@ return month + " " + dateArray[2] + " " + dateArray[0];
 
 },
 posterClick(index){
-  
+  index++
+  if(this.index >= this.movies[index].posters.length){
+    index = 0;
+  }
 }
 
 }
