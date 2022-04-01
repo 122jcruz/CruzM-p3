@@ -89,6 +89,9 @@ posterClick(index){
   if(this.index >= this.movies[index].posters.length){
     index = 0;
   }
+},
+timeText(minutes){
+  return Math.trunc(minutes/60)+"h"+(minutes%60)+"m";
 }
 
 }
