@@ -68,5 +68,48 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Mean Girls",
+            "iscore": 7.1,
+            "rating": "PG-13",
+            "runtime": 97,
+            "released": [2004, 4, 30],
+            "country": "USA",
+            "posters": ["img/meanGirls1.jpg","img/meanGirls2.jpg","img/meanGirls3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0377092/",
+            "website": "https://www.paramountpictures.com/movies/mean-girls",
+            "likes": 912,
+            "dislikes": 1,
+            "posterindex": 0
+      },
+      {
+            "title": "Avengers: Endgame",
+            "iscore": 8.4,
+            "rating": "PG-13",
+            "runtime": 181,
+            "released": [2019, 4, 26],
+            "country": "USA",
+            "posters": ["img/endgame1.jpg","img/endgame.jpg","img/endgame3.jpg"],
+            "imdb": "https://www.imdb.com/title/tt4154796/",
+            "website": "https://www.marvel.com/movies/avengers-endgame",
+            "likes": 912,
+            "dislikes": 5,
+            "posterindex": 0
+      },
+      {
+            "title": "Hercules",
+            "iscore": 7.3,
+            "rating": "G",
+            "runtime": 93,
+            "released": [1997, 6, 13],
+            "country": "USA",
+            "posters": ["img/hercules1.jpg","img/hercules2.jpeg","img/hercules3.jpg","img/hercules4.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0119282/",
+            "website": "https://www.uphe.com/schindlers-list",
+            "likes": 890,
+            "dislikes": 8,
+            "posterindex": 0
       }
+
 ]
